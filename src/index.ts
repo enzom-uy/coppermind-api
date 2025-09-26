@@ -1,3 +1,7 @@
-import { getCharacterFullPage } from "./features/characters/get-character";
+import { getCharacterFullHtmlPage } from "@/features/characters/index";
 
-getCharacterFullPage("kaladingongan");
+async function main() {
+  const test = await getCharacterFullHtmlPage("kaladin");
+  console.log(test);
+}
+main();
