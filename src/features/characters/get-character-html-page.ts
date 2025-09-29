@@ -16,6 +16,7 @@ interface CharacterFullPageQueryResponse {
 export const getCharacterFullHtmlPage = async (
   name: string,
 ): Promise<CosmereResponse<string>> => {
+  console.log("Triggered getCharacterFullHtmlPage");
   try {
     const response = await api
       .request({

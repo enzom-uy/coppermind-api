@@ -20,6 +20,7 @@
   "author": "Enzo Muñoz",
   "license": "MIT",
   "dependencies": {
+    "fast-xml-parser": "^5.2.5",
     "mwn": "^2.0.0"
   },
   "devDependencies": {
