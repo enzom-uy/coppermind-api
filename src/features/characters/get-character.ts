@@ -42,7 +42,7 @@ function parseWikiString(wikiString: string) {
 }
 
 export const getCharacter = async (
-  name: string,
+  name: string
   // TODO: type the CosmereResponse obj
 ): Promise<CosmereResponse<any>> => {
   try {
@@ -65,6 +65,7 @@ export const getCharacter = async (
 
     const parsedData = jObj.root.template[0].part;
 
+    // TODO: iterate over all options and return only the ones that exists, null otherwise
     const parents = parsedData.filter((item) => {
       return item.name === "parents";
     })[0];
